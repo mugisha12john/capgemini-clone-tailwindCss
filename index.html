@@ -19,7 +19,7 @@
       ></video>
       <div class="absolute inset-0 bg-black/50"></div>
       <div class="relative z-10 hover:bg-[#12151d] hover:cursor-pointer">
-        <div class="flex justify-end text-white text-sm gap-4 p-4">
+        <div class="hidden lg:flex justify-end text-white text-sm gap-4 p-4">
           <a href="#" class="hover:border-b-2 hover:border-blue-600"
             >Contact us
           </a>
@@ -39,7 +39,7 @@
             class="w-44"
             alt="Logo"
           />
-          <ul class="flex gap-10 text-lg font-semibold text-white">
+          <ul class="hidden lg:flex gap-10 text-lg font-semibold text-white">
             <li>Insights</li>
             <li>Industries</li>
             <li>Services</li>
@@ -47,7 +47,7 @@
             <li>News</li>
             <li>About us</li>
           </ul>
-          <div class="flex gap-4 ml-auto">
+          <div class="hidden lg:flex gap-4 ml-auto">
             <button
               class="flex justify-center items-center gap-2 hover:border-b-2 hover:border-blue-600"
             >
@@ -63,11 +63,21 @@
               </div>
             </button>
           </div>
+
+          <!-- burger menu -->
+          <div class="lg:hidden flex gap-10 ml-auto">
+            <button>
+              <img src="/images/icons8-search-30.png" class="w-6" alt="menu" />
+            </button>
+            <button>
+              <img src="/images/icons8-menu-30.png" class="w-6" alt="menu" />
+            </button>
+          </div>
         </nav>
       </div>
 
       <div
-        class="bg-[#095197] w-[560px] p-8 hover:cursor-pointer group h-60 absolute z-10 mt-96 ml-16 rounded-lg"
+        class="bg-[#095197] ml-10 w-80 lg:w-[560px] p-8 hover:cursor-pointer group h-70 opacity-80 absolute z-10 mt-80 lg:ml-16 rounded-lg"
       >
         <h1
           class="text-4xl font-semibold mx-auto mt-12 group-hover:[&:first-child]:bg-[#1a1c207a]"
