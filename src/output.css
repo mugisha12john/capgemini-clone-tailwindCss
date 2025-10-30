@@ -213,8 +213,17 @@
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .top-12 {
+    top: calc(var(--spacing) * 12);
+  }
   .top-16 {
     top: calc(var(--spacing) * 16);
+  }
+  .top-56 {
+    top: calc(var(--spacing) * 56);
+  }
+  .top-70 {
+    top: calc(var(--spacing) * 70);
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
@@ -565,6 +574,9 @@
   .bg-\[\#12151d\] {
     background-color: #12151d;
   }
+  .bg-\[\#21252d\] {
+    background-color: #21252d;
+  }
   .bg-\[\#095197\] {
     background-color: #095197;
   }
@@ -691,6 +703,9 @@
   .bg-\[url\(images\/2025-10-24_IQ_dotcom-banner_2880x1800px_v168\.jpg\.jpeg\)\] {
     background-image: url(images/2025-10-24_IQ_dotcom-banner_2880x1800px_v168.jpg.jpeg);
   }
+  .to-0\% {
+    --tw-gradient-to-position: 0%;
+  }
   .bg-cover {
     background-size: cover;
   }
@@ -726,6 +741,9 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .px-2 {
+    padding-inline: calc(var(--spacing) * 2);
   }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
@@ -1158,6 +1176,48 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-gradient-position {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-via {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-to {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #0000;
+}
+@property --tw-gradient-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-via-stops {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-gradient-from-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --tw-gradient-via-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+@property --tw-gradient-to-position {
+  syntax: "<length-percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1273,6 +1333,15 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-gradient-position: initial;
+      --tw-gradient-from: #0000;
+      --tw-gradient-via: #0000;
+      --tw-gradient-to: #0000;
+      --tw-gradient-stops: initial;
+      --tw-gradient-via-stops: initial;
+      --tw-gradient-from-position: 0%;
+      --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
       --tw-blur: initial;
       --tw-brightness: initial;
