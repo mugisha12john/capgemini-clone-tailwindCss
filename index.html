@@ -8,7 +8,7 @@
   </head>
   <body class="bg-[#12151d]">
     <header
-      class="relative flex flex-col h-[75vh] bg-cover bg-center bg-no-repeat text-white"
+      class="relative flex flex-col h-[80vh] bg-cover bg-center bg-no-repeat text-white"
     >
       <video
         muted
@@ -18,14 +18,22 @@
         src="https://www.capgemini.com/wp-content/uploads/2025/09/CAPGEMINI_MAKEITREAL_5s_VI_SKYSPORTS-final_v1.mp4"
       ></video>
       <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 hover:bg-[#12151d]">
+      <div class="relative z-10 hover:bg-[#12151d] hover:cursor-pointer">
         <div class="flex justify-end text-white text-sm gap-4 p-4">
-          <a href="#">Contact us <img src="" alt="" /></a>
-          <a href="#">Investors</a>
-          <a href="#">Global | EN</a>
+          <a href="#" class="hover:border-b-2 hover:border-blue-600"
+            >Contact us
+          </a>
+          <a href="#" class="hover:border-b-2 hover:border-blue-600"
+            >Investors</a
+          >
+          <a
+            href="#"
+            class="flex justify-center items-center gap-2 hover:border-b-2 hover:border-blue-600"
+            >Global | EN <img src="/images/globes.png" class="w-4" alt="" />
+          </a>
         </div>
 
-        <nav class="flex gap-10 items-center px-8">
+        <nav class="flex gap-10 items-center px-8 py-4">
           <img
             src="/images/footer-white-logo-new.svg"
             class="w-44"
@@ -40,8 +48,20 @@
             <li>About us</li>
           </ul>
           <div class="flex gap-4 ml-auto">
-            <button>Search</button>
-            <button>Dark</button>
+            <button
+              class="flex justify-center items-center gap-2 hover:border-b-2 hover:border-blue-600"
+            >
+              Search
+              <img src="/images/icons8-search-30.png" class="w-4" alt="" />
+            </button>
+            <button
+              class="flex justify-center items-center hover:cursor-pointer rounded-2xl gap-2 bg-[#262d3e] p-2"
+            >
+              <img src="/images/icons8-sun-24.png" class="w-4" alt="" />
+              <div class="bg-[#191d28] rounded-2xl p-1">
+                <img src="/images/icons8-moon-30.png" class="w-4" alt="" />
+              </div>
+            </button>
           </div>
         </nav>
       </div>
