@@ -18,7 +18,9 @@
         src="https://www.capgemini.com/wp-content/uploads/2025/09/CAPGEMINI_MAKEITREAL_5s_VI_SKYSPORTS-final_v1.mp4"
       ></video>
       <div class="absolute inset-0 bg-black/50"></div>
-      <div class="relative z-10 hover:bg-[#12151d] hover:cursor-pointer">
+      <div
+        class="relative m-2 lg:m-0 z-10 lg:hover:bg-[#12151d] lg:hover:cursor-pointer"
+      >
         <div class="hidden lg:flex justify-end text-white text-sm gap-4 p-4">
           <a href="#" class="hover:border-b-2 hover:border-blue-600"
             >Contact us
@@ -69,7 +71,7 @@
             <button>
               <img src="/images/icons8-search-30.png" class="w-6" alt="menu" />
             </button>
-            <button>
+            <button id="showNav">
               <img src="/images/icons8-menu-30.png" class="w-6" alt="menu" />
             </button>
           </div>
@@ -77,7 +79,7 @@
       </div>
 
       <div
-        class="bg-[#095197] ml-10 w-80 lg:w-[560px] p-8 hover:cursor-pointer group h-70 opacity-80 absolute z-10 mt-80 lg:ml-16 rounded-lg"
+        class="bg-[#095197] ml-10 w-80 lg:w-[560px] p-8 hover:cursor-pointer group h-70 opacity-80 absolute z-1 lg:z-10 mt-80 lg:ml-16 rounded-lg"
       >
         <h1
           class="text-4xl font-semibold mx-auto mt-12 group-hover:[&:first-child]:bg-[#1a1c207a]"
@@ -89,6 +91,64 @@
           the Ryder Cup
         </p>
       </div>
+      <!-- mobile nav link -->
+      <section
+        id="nav-mobile"
+        class="bg-[#12151d] hidden animate-slideDown lg:hidden absolute w-full z-9 top-0"
+      > 
+        <p class="mt-20"></p>
+        <div class="bg-[#1b1f27]">
+          <ul class="flex flex-col gap-4 text-white m-9 text-lg font-normal">
+            <li class="flex justify-between">
+              Insights
+              <img src="/images/icons8-arrow-30.png" alt="" />
+            </li>
+            <hr class="w-full border-t border-white/20" />
+            <li class="flex justify-between">
+              Industries <img src="/images/icons8-arrow-30.png" alt="" />
+            </li>
+            <hr class="w-full border-t border-white/20" />
+            <li class="flex justify-between">
+              Services <img src="/images/icons8-arrow-30.png" alt="" />
+            </li>
+            <hr class="w-full border-t border-white/20" />
+            <li class="flex justify-between">
+              Careers <img src="/images/icons8-arrow-30.png" alt="" />
+            </li>
+
+            <hr class="w-full border-t border-white/20" />
+            <li class="flex justify-between">
+              News <img src="/images/icons8-arrow-30.png" alt="" />
+            </li>
+            <hr class="w-full border-t border-white/20" />
+            <li class="flex justify-between">
+              About us <img src="/images/icons8-arrow-30.png" alt="" />
+            </li>
+            <hr class="w-full border-t border-white/20" />
+          </ul>
+          <div class="mt-20 m-9 flex flex-col">
+            <p class="text-sm font-light">Investors</p>
+            <p class="text-sm font-light flex gap-2">
+              Contact us
+              <img src="/images/icons8-arrow-50.png" class="w-4" alt="" />
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center">
+          <h2 class="ml-9 flex justify-start gap-2 items-center">
+            <img src="/images/globes.png" class="w-4" alt="" /> Global | EN
+          </h2>
+          <div
+            class="flex bg-[#262d3e] w-14 justify-around rounded-2xl mr-9 items-center"
+          >
+            <img src="/images/icons8-sun-24.png" class="w-4" alt="" />
+            <div class="bg-[#191d28] rounded-2xl p-1">
+              <img src="/images/icons8-moon-30.png" class="w-4" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
 
     <script src="./script.js" defer></script>
